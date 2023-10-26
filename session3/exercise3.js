@@ -62,3 +62,52 @@ while(rupiah.length < number.toString().length) {
 }
 
 console.log('Rp. ' + rupiah + ',00');
+
+// Write a code to remove the first occurrence of a given “search string” from a string
+// ○ Example : string = “Hello world”, search string = “ell” → “Ho world”
+let string = "Hello world";
+let search = "ell";
+
+let result3 = "";
+
+for (let i = 0; i < string.length; i++) {
+  if (string[i] === search[0]) {
+    let matched = true;
+    for (let j = 1; j < search.length; j++) {
+      if (string[i + j] !== search[j]) {
+        matched = false;
+        break;
+      }
+    }
+
+    if (matched) {
+      i += search.length; 
+      continue;
+    }
+  }
+
+  result3 += string[i];
+}
+
+console.log(result3); // "Ho world"
+
+// Write a code to capitalize the first letter of each word in a string
+// ○ Example : “hello world” → “Hello World”
+let strings = 'hello world'
+let words = strings.split(' ')
+
+for (let i = 0; i < words.length; i++) {
+  words[i] = words[i][0].toUpperCase() + words[i].slice(1)
+}
+let result4 = words.join(' ')
+console.log(result4)
+
+// Write a code to reverse a string.
+// ○ Example : “hello” → “olleh”
+let string2 = "hello"
+let reverse = ""
+
+for (let i = string2.length - 1; i >= 0; i--){
+  reverse += string2[i]
+}
+console.log(reverse)
