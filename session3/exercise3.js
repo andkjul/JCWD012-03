@@ -16,7 +16,7 @@ console.log(`${number} x ${i} = ${result}`)
 ○ Example : ‘madam’ → palindrome */
 // input string, clean, reverse, compare
 let word = "madam"
-let reversed = word.split
+let reversed = word.split(" ").reverse().join(" ")
 
 if(word == reversed){
     console.log(`Palindrome`);
