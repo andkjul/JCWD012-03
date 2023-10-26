@@ -50,12 +50,12 @@ console.log(resultkm)
 // Write a code to format number as currency (IDR)
 // ○ Example : 1000 → “Rp. 1.000,00”
 let number1 = 1000;
-let rupiah = number.toString();
+let rupiah = number1.toString();
 
 let sisa = rupiah.length % 3;
 rupiah = rupiah.substring(0, sisa); 
 
-while(rupiah.length < number.toString().length) {
+while(rupiah.length < number1.toString().length) {
   rupiah += '.' + rupiah.substring(rupiah.length, rupiah.length + 3); 
 }
 
@@ -109,3 +109,37 @@ for (let i = string2.length - 1; i >= 0; i--){
   reverse += string2[i]
 }
 console.log(reverse)
+
+// bandingkan 2 num
+num1 = 42
+num2 = 27
+
+if(num1 > num2){
+  console.log(num1)
+} else if(num2 > num1){
+  console.log(num2)
+} else {
+  console.log("angka sama besar")
+}
+
+// 
+let myVar = 45
+if(typeof myVar == "number"){
+  console.log(2)
+} else if(typeof myVar == "string"){
+    console.log(1);
+} else {
+    console.log(3)
+}
+
+// ganti setiap "a" dengan *
+let myString = "an apple a day keep the doctor away" // index max 35
+let result2 = ""
+for (let i = 0; i < myString.length; i++){
+    if(myString[i]== "a"){
+      result2 = result2 + "*"
+    } else{
+      result2 = result2 + myString[i]
+    }
+}
+console.log(result2)
