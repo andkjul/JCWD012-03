@@ -1,3 +1,18 @@
+// alphabet
+// index dimulai dari 0, maka 0 = a
+let str = "qUiCk bRoWn fOx";
+let result = "";
+
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === str[i].toUpperCase()) {
+    result += str[i].toLowerCase(); 
+  } else {
+    result += str[i];
+  }
+}
+
+console.log(result);
+
 /*Write a code to display themultiplication table of a giveninteger.
 ○ Example : Number → 9
 ○ Output :
@@ -23,23 +38,6 @@ if(word == reversed){
 }   else{
     console.log(`Not palindrome`)
 }
-
-// alphabet
-// index dimulai dari 0, maka 0 = a
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-let str = "qUiCk bRoWn fOx";
-let result = "";
-
-for (let i = 0; i < str.length; i++) {
-  if (str[i] === str[i].toUpperCase()) {
-    result += str[i].toLowerCase(); 
-  } else {
-    result += str[i];
-  }
-}
-
-console.log(result);
 
 /*
 Write a code to convert centimeter to kilometer.
