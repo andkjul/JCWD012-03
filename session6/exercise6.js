@@ -61,7 +61,7 @@ class Transaction{
 
     addToCart(product, qty) {
         this.productCart.push({
-            product:product,
+            product:JSON.stringify(product),
             qty:qty,
             subtotal:product.price * qty,
         })
@@ -90,3 +90,4 @@ transaction1.addToCart(product1,2)
 transaction1.addToCart(product3,3)
 
 console.log(transaction1.showTotal())
+console.table(transaction1.product)

@@ -1,5 +1,5 @@
-//Triangle
-function triangle(height) {
+// Triangle
+function triangle(hei) {
     let lastNumber = 0
     for(let i = 1; i <= height; i++) {
         let numbers = ""
@@ -13,7 +13,7 @@ function triangle(height) {
 }
 triangle(5)
 
-//fizzBuzz
+// fizzBuzz
 function fizzBuzz(fizz, buzz) {
     for (let i = 1; i <= 100; i++)
     if (i % fizz === 0 && i % buzz === 0){
