@@ -1,6 +1,5 @@
 // compare two object
 function compareObject(obj1, obj2) {
-    // get key
     const keys1 = Object.keys(obj1)
     const keys2 = Object.keys(obj2)
 
@@ -82,8 +81,6 @@ function factorial(n) {
       return n * factorial(n - 1);
     }
   }
-  
-  // Example usage
   const input1 = 5;
   const output1 = factorial(input1);
   console.log(`Factorial of ${input1} is: ${output1}`);
